@@ -1,0 +1,15 @@
+
+@font-face {
+    font-family: 'Custom';
+    src: url('Jersey15-Regular.ttf') format('truetype');
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}   
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
