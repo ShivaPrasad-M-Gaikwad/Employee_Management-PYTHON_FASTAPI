@@ -8,13 +8,14 @@
     <title>Api management</title>
   </head>
   <body class="text-4xl bg-yellow-300">
+   
     <!-- Create - Read - Update - Delete (NAV) -->
-    <div
-      class="nav h-[10vh] w-full flex justify-around items-center text-neutral-800"
+    <div id="navg"
+    class="nav h-[10vh] w-full flex justify-around items-center text-neutral-800"
     >
-      <a href="#Create" class="hover:bg-red-500 rounded-2xl p-3">Create</a>
-      <a href="#Read" class="hover:bg-red-500 rounded-2xl p-3">View</a>
-    </div>
+    <a href="#Create" class="hover:bg-red-500 rounded-2xl p-3">Create</a>
+    <a href="#Read" class="hover:bg-red-500 rounded-2xl p-3">View</a>
+  </div>
     <!-- Read -->
     <div
       id="Read"
@@ -25,12 +26,9 @@
         type="text" id="databyid"
         class="getuserdetailbyid cursor-text text-slate-900 my-5 rounded-xl py-4 bg-yellow-300 flex justify-center items-center"
       />
+      <div class="DisplayData h-fit overflow-scroll overflow-x-scroll flex hidden flex-col py-5 justify-between w-[90%] my-5 rounded-md bg-slate-500">
+      </div>
       <button type="submit" class="Submitbtn p-3 rounded-xl cursor-pointer bg-slate-800 hover:bg-slate-500 ">Submit</button>
-
-<!-- <div class="delete bg-red-500 rounded-md text-2xl hover:bg-red-900 p-2 w-fit">Delete</div> -->
-      <div class="DisplayData h-[20%] overflow-scroll overflow-x-scroll flex hidden flex-col py-5 justify-between w-[90%] my-5 rounded-md bg-slate-500">
-
-    </div>
   </div>
     <!-- Create -->
     <div
@@ -52,9 +50,39 @@
         type="number" id="getsalary"
         class="inputsalary cursor-text text-slate-900 my-5 rounded-xl py-4 bg-yellow-300 flex justify-center items-center"
       />
-      <button type="submit" class="CreateSubmitbtn p-3 rounded-xl cursor-pointer bg-slate-800 hover:bg-slate-500 ">Submit</button>
+      <button type="submit" class="CreateaddupdateBTN p-3 rounded-xl cursor-pointer bg-slate-800 hover:bg-slate-500 ">ADD</button>
+      </div>
+    <!-- UPDATE -->
+    <div
+    id="Update"
+    class="Update h-screen w-full bg-slate-900 text-cyan-200 flex flex-col justify-center items-center"
+  >
+    <label class="idupdate my-5 text-yellow-600"></label>
+  
+    <label for="upname">Update Name : </label>
+    <input
+      type="text" id="upname"
+      class="inputupdatename cursor-text text-slate-900 my-5 rounded-xl py-4 bg-yellow-300 flex justify-center items-center"
+    />
+    <label for="upjob">Update Job : </label>
+    <input
+      type="text" id="upjob"
+      class="inputupdatejob cursor-text text-slate-900 my-5 rounded-xl py-4 bg-yellow-300 flex justify-center items-center"
+    />
+    <label for="upsalary">Update Salary : </label>
+    <input
+      type="number" id="upsalary"
+      class="inputpudatesalary cursor-text text-slate-900 my-5 rounded-xl py-4 bg-yellow-300 flex justify-center items-center"
+    />
+    <button type="submit" class="CreateupdateBTN p-3 rounded-xl cursor-pointer bg-slate-800 hover:bg-slate-500 ">Update</button>
+    
+    </div>
+    
+    
     <!--  -->
-
+     <!-- GO TO TOP -->
+     <a href="#navg" class="GTT md:left-[90%] w-20 h-20 top-[85%] left-[40%] hover:animate-spin animate-pulse transition-transform fixed z-50 flex justify-center items-center bg-green-400 p-2 rounded-full">UP</a>
+    
     <script src="/main.js"></script>
   </body>
 </html>
